@@ -6,6 +6,9 @@
   "exports": {
     ".": "./d.ts"
   },
+  "repository": {
+    "url": "https://github.com/homeapis/cfworkers-sdk"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "pretty": "prettier --write \"src/**/*.{ts,tsx}\" \"src/*.ts\"",
