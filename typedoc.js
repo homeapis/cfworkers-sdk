@@ -1,5 +1,5 @@
 module.exports = {
-    name: '@homeapis/internal-cfworkers-sdk',
+    name: '@homeapis/cfworkers-sdk',
     out: './docs/',
     exclude: [
     //   './src/session/cache.ts',

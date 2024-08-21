@@ -1,5 +1,5 @@
 {
-  "name": "@homeapis/internal-cfworkers-sdk",
+  "name": "@homeapis/cfworkers-sdk",
   "version": "1.0.0",
   "description": "Our internal SDK for Cloudflare Workers.",
   "main": "index.js",
@@ -36,7 +36,7 @@
     "app"
   ],
   "author": "Théo Thomas",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.8",
     "itty-router": "^5.0.18",
