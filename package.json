@@ -1,6 +1,6 @@
 {
   "name": "@homeapis/cfworkers-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Our internal SDK for Cloudflare Workers.",
   "main": "index.js",
   "exports": {
