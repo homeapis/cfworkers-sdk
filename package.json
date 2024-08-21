@@ -1,0 +1,39 @@
+{
+  "name": "@homeapis/internal-cfworkers-sdk",
+  "version": "1.0.0",
+  "description": "Our internal SDK for Cloudflare Workers.",
+  "main": "index.js",
+  "exports": {
+    ".": "./d.ts"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "pretty": "prettier --write \"src/**/*.{ts,tsx}\" \"src/*.ts\"",
+    "lint": "tsc --noEmit && eslint --fix --ext .ts ./src",
+    "docs": "typedoc --options typedoc.js src",
+    "prepack": "npm run build",
+    "install:example": "npm i --prefix=example-app --no-package-lock",
+    "build": "npm run clean && tsc -p tsconfig.build.json",
+    "build:example": "npm run build --prefix=example-app",
+    "build:vercel": "npm run install:example && npm run build && npm run build:example",
+    "start:example": "npm run dev --prefix=example-app",
+    "start:example-local": "npm run dev:local --prefix=example-app",
+    "test": "jest tests --coverage",
+    "test:watch": "jest --coverage --watch",
+    "test:example": "start-server-and-test start:example http-get://localhost:3000 cypress:run",
+    "test:example:watch": "start-server-and-test start:example 3000 cypress:open",
+    "test:example-local": "npx start-server-and-test 'start:example-local' http://localhost:3000 'cypress run --config-file=./cypress-local.config.js'",
+    "test:example-local:watch": "npx start-server-and-test 'start:example-local' http://localhost:3000 'cypress open --config-file=./cypress-local.config.js'",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "cloud",
+    "app"
+  ],
+  "author": "Théo Thomas",
+  "license": "SEE LICENSE IN LICENSE.md"
+}
