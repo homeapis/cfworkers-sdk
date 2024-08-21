@@ -20,6 +20,6 @@ We provide **experimental** documentation for the project on https://cfworkers-s
 We plan on supporting more Workers features in the coming months.
 
 ## Notice
-This repository is based on the incredible [itty-router](https://github.com/kwhitley/itty-router) project, from @kwhitley. We provide this package under the terms of the [MIT license](https://github.com/homeapis/cfworkers-sdk/main/license), allowing you to contribute, distribute, copy, remix and re-use this project as freely as need be.
+This repository is based on the incredible [itty-router](https://github.com/kwhitley/itty-router) project, from @kwhitley. We provide this package under the terms of the [MIT license](./LICENSE.MD), allowing you to contribute, distribute, copy, remix and re-use this project as freely as need be.
 
 **We are not affiliated to, or endorsed by Cloudflare, nor the Cloudflare Workers® family of products in any manner.**
