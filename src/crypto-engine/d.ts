@@ -1,7 +1,7 @@
-import * as randomize from "./random";
+import * as randomize from './random';
 
 const edgeCrypto = {
-    ...randomize,
-}
+  ...randomize
+};
 
-export default edgeCrypto
+export default edgeCrypto;
