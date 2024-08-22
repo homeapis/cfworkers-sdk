@@ -25,7 +25,7 @@ jobs:
             - name: Build Doc
               run: |
                 # Replace with your doc command
-                npm run build
+                npm run docs
                 curl -O https://gist.githubusercontent.com/gorgeousawakening/efc3c9efacd4241893e19e54787bd7fc/raw/c80c3c7b75d47526dc1de990bff5922e5f942d46/typedoc-fix-cf.mjs
                 # Replace docs for your folder path it uses the folder where was downloaded like root path (its a mandatory provide a path)
                 node typedoc-fix-cf.mjs docs
