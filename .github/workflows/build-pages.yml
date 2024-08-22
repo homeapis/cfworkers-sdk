@@ -2,7 +2,7 @@ name: Build docs
 
 on:
     push: 
-        branches: [ $default-branch ]
+        branches: [main]
 
 env:
     APP_NAME: typedoc
