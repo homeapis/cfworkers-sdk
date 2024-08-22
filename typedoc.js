@@ -1,6 +1,6 @@
 module.exports = {
     name: '@homeapis/cfworkers-sdk',
-    out: './docs/',
+    out: './docs/docs',
     exclude: [
     //   './src/session/cache.ts',
     //   './src/client/use-config.tsx',
