@@ -22,10 +22,11 @@ jobs:
             - name: Build Doc
               run: |
                 # Replace with your doc command
-                pnpm doc
+                npm run build
                 curl -O https://gist.githubusercontent.com/gorgeousawakening/efc3c9efacd4241893e19e54787bd7fc/raw/c80c3c7b75d47526dc1de990bff5922e5f942d46/typedoc-fix-cf.mjs
                 # Replace docs for your folder path it uses the folder where was downloaded like root path (its a mandatory provide a path)
                 node typedoc-fix-cf.mjs docs
+
     deploy:
         name: deploy-to-pages
         runs-on: ubuntu-latest
@@ -40,6 +41,11 @@ jobs:
             url: ${{ steps.deployment.outputs.page_url }}
 
         steps:
+            - uses: actions/checkout@v4
+            - name: Copy docs
+              run: |
+                cp -r docs/* .  # Replace with the actual path where your documentation resides
+                
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v4 
