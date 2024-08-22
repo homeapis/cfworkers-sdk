@@ -33,7 +33,7 @@ jobs:
                 node typedoc-fix-cf.mjs docs
             
             - name: Upload artifact
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-pages-artifact@v3
               with:
                 name: 'github-pages'
                 path: 'docs'
@@ -52,8 +52,8 @@ jobs:
             url: ${{ steps.deployment.outputs.page_url }}
 
         steps:
-            - name: Configure Pages
-              uses: actions/configure-pages@v4
+            # - name: Configure Pages
+            #   uses: actions/configure-pages@v4
 
             - name: Deploy to GitHub Pages
               id: deployment
