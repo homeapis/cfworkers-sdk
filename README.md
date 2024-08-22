@@ -13,6 +13,20 @@ It requires (for complete feature set only, lightweight mode coming in next mont
 * a Cloudflare D1 database on your account
 * a Cloudflare R2 storage bucket on your account
 
+## Installation
+
+* NPM Registry:
+```
+# install from the NPM registry
+npm i @homeapis/cfworkers-sdk
+```
+
+* Github Releases:
+```
+# install from the NPM registry
+npm i @homeapis/cfworkers-sdk
+```
+
 # Documentation
 We provide **experimental** documentation for the project on https://homeapis.github.io/cfworkers-sdk/.
 

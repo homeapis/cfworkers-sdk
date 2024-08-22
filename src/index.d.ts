@@ -1,21 +1,10 @@
-import * as edge from './cloudflare-edge/d';
-import * as stellaris from './stellaris/index';
-import * as auth0 from './auth0/index';
-import * as images from './images/index';
-import * as platform from './platform/index';
-import * as brat from './brat/index';
-import * as smartlinks from './smartlinks/index';
-import * as analytics from './analytics/index'
-import * as colocations from './colocations.json'
+import * as authKit from './authKit';
+import * as cryptoKit from './cryptoKit';
+import * as handler from './edgeKit';
+import * as networkKit from './networkKit';
+import * as streamingKit from './streamingKit';
+import * as marketingKit from './marketingKit';
+import * as imagesKit from './imagesKit';
+import * as jwtKit from './jwtKit';
 
-export {
-    analytics,
-    edge,
-    stellaris,
-    auth0,
-    images,
-    platform,
-    brat,
-    smartlinks,
-    colocations
-};
+export { authKit, cryptoKit, handler, networkKit, streamingKit, jwtKit, marketingKit, imagesKit };
