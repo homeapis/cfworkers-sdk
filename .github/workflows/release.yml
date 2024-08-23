@@ -39,11 +39,6 @@ jobs:
               ${{ steps.tag_version.outputs.changelog }}
             draft: false
             prerelease: false
-          
-        # update the version with NPM
-        - run: git config --global user.name "homeapis"
-        - run: git config --global user.email opensource@homeapis.com
-        - run: npm version ${{ steps.tag_version.outputs.new_version }}
 
     npmjs:
       runs-on: ubuntu-latest
