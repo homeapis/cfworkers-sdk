@@ -9,7 +9,7 @@ name: Create Release
 jobs:
     build:
         permissions:
-          contents: read
+          contents: write
           id-token: write # For publishing to npm using --provenance
 
         name: Create Release
