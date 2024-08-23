@@ -40,10 +40,9 @@ jobs:
             prerelease: false
           
         # update the version with NPM
-        - name: Update Version in package.json
-          uses: reedyuk/npm-version@1.1.1
-          with:
-            version: ${{ steps.tag_version.outputs.new_version }}
+        - run: git config --global user.name "homeapis"
+        - run: git config --global user.email opensource@homeapis.com
+        - run: npm version ${{ steps.tag_version.outputs.new_version }}
 
     npmjs:
       runs-on: ubuntu-latest
