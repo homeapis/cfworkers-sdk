@@ -1,1 +1,1 @@
-trying new workflow
+feat(semver): add 'write' option
