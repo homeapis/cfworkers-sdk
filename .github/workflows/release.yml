@@ -40,7 +40,10 @@ jobs:
             prerelease: false
           
         # update the version with NPM
-        - run: npm version ${{ steps.tag_version.outputs.new_version }}
+        - name: Update Version in package.json
+          uses: reedyuk/npm-version@1.1.1
+          with:
+            version: ${{ steps.tag_version.outputs.new_version }}
 
     npmjs:
       runs-on: ubuntu-latest
