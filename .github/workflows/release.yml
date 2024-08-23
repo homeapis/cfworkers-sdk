@@ -5,13 +5,13 @@ on:
       - main
   
 name: Create Release
-
-permissions:
-  contents: read
-  id-token: write # For publishing to npm using --provenance
   
 jobs:
     build:
+        permissions:
+          contents: read
+          id-token: write # For publishing to npm using --provenance
+
         name: Create Release
         runs-on: ubuntu-latest
         steps:
@@ -42,6 +42,7 @@ jobs:
     npmjs:
       runs-on: ubuntu-latest
       needs: build
+      
       permissions:
         contents: read
         id-token: write
